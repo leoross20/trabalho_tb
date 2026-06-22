@@ -262,23 +262,19 @@ mapa_unidade = {
 
 if st.button("Calcular risco", type="primary"):
 
-        if (
-            idade is None
-            or contatos is None
-            or sexo == ""
-            or raca == ""
-            or escolaridade == ""
-            or entrada == ""
-            or hiv == ""
-            or raiox == ""
-            or tipo_unidade == ""
-        ):
-            st.error("Preencha todos os campos antes de calcular o risco.")
-            st.stop()
-
-    registro = {
-        ...
-    }
+    if (
+        idade is None
+        or contatos is None
+        or sexo == ""
+        or raca == ""
+        or escolaridade == ""
+        or entrada == ""
+        or hiv == ""
+        or raiox == ""
+        or tipo_unidade == ""
+    ):
+        st.error("Preencha todos os campos antes de calcular o risco.")
+        st.stop()
 
     registro = {
         "TRATAMENTO": mapa_entrada[entrada],
@@ -374,9 +370,3 @@ if st.button("Calcular risco", type="primary"):
         st.caption(
             "Resultado demonstrativo. Para usar o modelo real, salve o arquivo em `modelo/modelo_final.pkl`."
         )
-
-
-st.markdown(
-    '<div class="rodape">SINAN · DataSUS · Projeto de Machine Learning — apoio à decisão clínica</div>',
-    unsafe_allow_html=True
-)
