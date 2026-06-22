@@ -1,4 +1,4 @@
-Projeto de Predição de Abandono do Tratamento da Tuberculose
+Projeto de Predição de Abandono do Tratamento da Tuberculose!
 
 Este projeto foi desenvolvido no contexto do Nanodegree de Machine Learning, com o objetivo de construir modelos capazes de prever a probabilidade de abandono do tratamento da tuberculose (Loss to Follow-up – LTFU) a partir de dados do Sistema de Informação de Agravos de Notificação (SINAN). Além do treinamento e avaliação dos modelos, o projeto contempla técnicas de explicabilidade e uma aplicação web para apoio à decisão clínica.
 
