@@ -262,8 +262,6 @@ mapa_unidade = {
 
 if st.button("Calcular risco", type="primary"):
 
-    if st.button("Calcular risco", type="primary"):
-
         if (
             idade is None
             or contatos is None
